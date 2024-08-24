@@ -206,7 +206,7 @@ search:
 ######## Comments ########
 comments:
   service: giscus
-  comment_title: 快来参与讨论吧~
+  comment_title: 请合理发言，网络不是法外之地，快来讨论吧~
   lazyload: false # true / false
   # beaudar
   # https://beaudar.lipk.org/
