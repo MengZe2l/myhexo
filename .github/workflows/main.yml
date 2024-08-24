@@ -45,7 +45,7 @@ jobs:
         hexo clean
         hexo generate
 
-    - name: 部署 #此处master:master 指从本地的master分支提交到远程仓库的master分支(不是博客的分支写master即可)，若远程仓库没有对应分支则新建一个。如有其他需要，可以根据自己的需求更改。
+    - name: 部署
       run: |
         cd ./public
         git init
