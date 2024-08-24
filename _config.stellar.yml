@@ -324,19 +324,19 @@ footer:
     #   icon: default:theme
     #   onclick: 'switchTheme()'
   sitemap:
-    # '博客':
-    #   - '[近期](/)'
-    #   - '[分类](/)'
-    #   - '[标签](/)'
-    #   - '[归档](/)'
-    # '项目':
-    #   - '[开源库](/)'
-    # '社交':
-    #   - '[友链](/)'
-    #   - '[留言板](/)'
-    # '更多':
-    #   - '[关于本站](/)'
-    #   - '[GitHub](/)'
+     '博客':
+       - '[近期](/)'
+       - '[分类](/)'
+       - '[标签](/)'
+       - '[归档](/)'
+     '项目':
+       - '[开源库](https://github.com/MengZe2l/)'
+     '社交':
+       - '[友链](/links)'
+       - '[关于我](/about/)'
+     '更多':
+       - '[免责声明](/privacy-policy)'
+       - '[每日早报](/newspaper/)'
   content: | # 支持 Markdown 格式
     本站由 [{author.name}](/) 使用 [{theme.name} {theme.version}]({theme.tree}) 主题创建。
     本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。
