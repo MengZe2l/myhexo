@@ -1,4 +1,4 @@
-name: 自动部署
+name: 博客自动化部署
 
 on:
   push:
@@ -13,39 +13,29 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: 检查分支
+    - name: 正在检查分支
       uses: actions/checkout@v2
       with:
         ref: main
 
-    - name: 安装 Node
+    - name: 正在安装Node.js
       uses: actions/setup-node@v1
       with:
         node-version: "16.x"
 
-    - name: 安装 Hexo
-      run: |
-        export TZ='Asia/Shanghai'
-        npm install hexo-cli -g
-
-    - name: 缓存 Hexo
+    - name: 正在缓存Hexo
       uses: actions/cache@v1
       id: cache
       with:
         path: node_modules
         key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
 
-    - name: 安装依赖
-      if: steps.cache.outputs.cache-hit != 'true'
-      run: |
-        npm install --save
-
-    - name: 生成静态文件
+    - name: 正在生成静态文件
       run: |
         hexo clean
         hexo generate
 
-    - name: 部署
+    - name: 开始部署静态文件到远端
       run: |
         cd ./public
         git init

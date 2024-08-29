@@ -30,7 +30,9 @@ Github统计
 
 ### QQ群聊
 
-![1711791691137.jpg](https://www.mengze2.cn/usr/uploads/2024/03/562431435.jpg "1711791691137.jpg")
+![20240829194701-945938b9d31356d18913228d79383fc5.png](https://s2.loli.net/2024/08/29/2eiSXpA5woBdQZf.png)
+
+点击链接加入群聊：https://qm.qq.com/q/SyQggXNisa
 
 ### Telegram频道
 
