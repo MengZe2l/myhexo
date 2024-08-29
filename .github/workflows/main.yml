@@ -1,4 +1,4 @@
-name: 博客自动化部署
+name: 博客自动化部署/梦泽
 
 on:
   push:
@@ -23,7 +23,7 @@ jobs:
       with:
         node-version: "16.x"
 
-    - name: 安装 Hexo
+    - name: 正在安装Hexo
       run: |
         export TZ='Asia/Shanghai'
         npm install hexo-cli -g
@@ -35,7 +35,7 @@ jobs:
         path: node_modules
         key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
 
-    - name: 安装依赖
+    - name: 正在安装依赖
       if: steps.cache.outputs.cache-hit != 'true'
       run: |
         npm install --save
