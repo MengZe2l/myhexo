@@ -5,10 +5,10 @@
 # Site
 title: 云深幽居处
 favicon: /favicon.ico
-avatar: /avatar.png
-subtitle: '万般皆是命，半点不由人'
-description: '梦泽使用Hexo托管在Github.上的博客'
-keywords: 梦泽,博客
+avatar: /Image_1724925259494.png
+subtitle: '万物皆有裂痕，那是光进来的地方'
+description: '梦泽使用Hexo托管在Github.上的博客，梦泽的博客，免费学习PHP，Nodjs,全栈开发工程师的博客'
+keywords: 梦泽,博客,梦泽的个人博客,Hexo,PHP,Minecraft,Node.js,html,css.js,blog,日常分享,全栈开发
 author: MengZe2
 language: zh-CN
 timezone: 'Asia/Shanghai'
