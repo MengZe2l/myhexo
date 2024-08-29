@@ -23,12 +23,22 @@ jobs:
       with:
         node-version: "16.x"
 
+    - name: 安装 Hexo
+      run: |
+        export TZ='Asia/Shanghai'
+        npm install hexo-cli -g
+
     - name: 正在缓存Hexo
       uses: actions/cache@v1
       id: cache
       with:
         path: node_modules
         key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
+
+    - name: 安装依赖
+      if: steps.cache.outputs.cache-hit != 'true'
+      run: |
+        npm install --save
 
     - name: 正在生成静态文件
       run: |
