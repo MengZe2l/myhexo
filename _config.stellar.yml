@@ -263,10 +263,6 @@ comments:
     serverURL: https://waline.mengze2.cn/
     # If false, comment count will only be displayed in post page, not in home page
     commentCount: true
-    locale:
-      placeholder:
-        😎嗨，朋友，留下脚印再走呗。
-    reaction: true
     # Pageviews count, Note: You should not enable both `waline.pageview` and `leancloud_visitors`.
     pageview: false
     # Custom emoji
