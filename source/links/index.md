@@ -77,3 +77,5 @@ date: 2024-08-11 14:39:33
 {% link https://dusays.com/ desc:true %}
 
 {% link https://b.wihi.top/ desc:true %}
+
+{% friends ios_developer %}
