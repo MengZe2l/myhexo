@@ -177,7 +177,7 @@ article:
   # 如果没有指定横幅，是否根据 tags 作为关键词搜索横幅图片？
   auto_banner: false # search from https://source.unsplash.com/
   # 如果没有指定 excerpt 和 description，将自动取多长的内容作为文章摘要？
-  auto_excerpt: 128
+  auto_excerpt: 90
   # 分类颜色
   category_color:
     '探索号': '#f44336'
@@ -537,6 +537,7 @@ plugins:
     enable: #true # hexo-renderer-markdown-it-plus 默认开启 katex，此选项仅用于引入样式
     inject: |
       <link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://static.zeoseven.com/cn/2/main/result.css" media="all" onload="this.media='all'" />
   
   # MathJax
   # 需在Markdown文件开头加入mathjax: true
