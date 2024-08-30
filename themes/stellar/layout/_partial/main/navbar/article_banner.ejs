@@ -43,7 +43,6 @@ function layoutBreadcrumb() {
     }
   // end 3.left.top
   el += `</div>`
-el += '<div class="flex-row" id="page-words"><span style="padding: 4px;">本文：' + wordcount(page.content) + '字</span><span class="sep updated" style="padding: 4px;"></span><span class="text updated" style="padding: 4px;">阅读时长：' + min2read(page.content) + '分</span></div>';
   // 在这里添加标签代码
  if (page.layout == "post" && page.tags && page.tags.length > 0) {
    el += '<div id="tag">'; // 将标签容器的创建移动到条件内部
@@ -58,6 +57,7 @@ el += '<div class="flex-row" id="page-words"><span style="padding: 4px;">本文�
  }
   // 3.left.bottom
   el += partial('dateinfo')
+  el += '<div class="flex-row" id="page-words"><span style="padding: 4px;">本文：' + wordcount(page.content) + '字</span><span class="sep updated" style="padding: 4px;"></span><span class="text updated" style="padding: 4px;">阅读时长：' + min2read(page.content) + '分</span></div>';
   // end 2.left
   el += `</div>`
   // end 1.main
