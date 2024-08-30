@@ -175,7 +175,7 @@ article:
   # 封面图宽高比
   cover_ratio: 2.4
   # 如果没有指定横幅，是否根据 tags 作为关键词搜索横幅图片？
-  auto_banner: false # search from https://source.unsplash.com/
+  auto_banner: true # search from https://source.unsplash.com/
   # 如果没有指定 excerpt 和 description，将自动取多长的内容作为文章摘要？
   auto_excerpt: 90
   # 分类颜色
@@ -268,7 +268,7 @@ comments:
         😎嗨，朋友，留下脚印再走呗。
     reaction: true
     # Pageviews count, Note: You should not enable both `waline.pageview` and `leancloud_visitors`.
-    pageview: true
+    pageview: false
     # Custom emoji
      emoji:
        - https://unpkg.com/@waline/emojis@1.1.0/weibo
