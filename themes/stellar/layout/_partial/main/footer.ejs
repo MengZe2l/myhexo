@@ -30,6 +30,7 @@ function layoutDiv() {
   }
   el += '</div></footer>'
   return el
+  el += '<span class="totalcount">共发表 ' + site.posts.length + ' 篇Blog · </span><span class="post-count">总计 ' + totalcount(site) + ' 字</span>'
 }
 %>
 <%- layoutDiv() %>
