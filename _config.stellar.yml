@@ -347,6 +347,52 @@ footer:
     本站由 [{author.name}](/) 使用 [{theme.name} {theme.version}]({theme.tree}) 主题创建。
     本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。
     [友链申请](https://www.mengze2.cn/links)|[免责声明](https://www.mengze2.cn/privacy-policy)|[广告合作](https://qm.qq.com/q/e1z9jakY0g)|[关于我们](https://www.mengze2.cn/25-2)  
+  <!--不蒜子计数器-->
+  <script async="" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <!--添加一个访问量-->
+  <span>总访问 <span id="busuanzi_value_site_pv" style="font-weight: bold;">113701</span> 次 | 本页访问 <span id="busuanzi_value_page_pv" style="font-weight: bold;">326</span> 次</span>
+  </br>
+  <span id="runtime_span"></span>
+
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+      var runtime_span = document.getElementById('runtime_span');
+
+      function show_runtime() {
+        // 调用定时器
+        setTimeout(show_runtime, 1000);
+
+        var seconds = 1000;
+        var minutes = seconds * 60;
+        var hours = minutes * 60;
+        var days = hours * 24;
+        var years = days * 365;
+
+        var today = new Date();
+        var todayYear = today.getFullYear();
+        var todayMonth = today.getMonth();
+        var todayDate = today.getDate();
+        var todayHour = today.getHours();
+        var todayMinute = today.getMinutes();
+        var todaySecond = today.getSeconds();
+
+        var t1 = Date.UTC(2023, 8, 12, 0, 0, 0); // UTC时间，月份从0开始
+        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+        var diff = t2 - t1;
+
+        var diffYears = Math.floor(diff / years);
+        var diffDays = Math.floor((diff / days) - diffYears * 365);
+        var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+        var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes);
+        var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes * minutes) / seconds);
+
+        // 更新显示时间的span元素内容
+        runtime_span.innerHTML = "勉强运行：" + diffYears + " 年 " + diffDays + " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+      }
+
+      show_runtime(); // 初次调用函数以启动定时器
+    });
+  </script>
         [开往下站](https://www.travellings.cn/go.html) · [博客录](https://bokelu.suijiboke.gs) · [BlogWe](https://www.blogwe.com)·[博友圈](https://www.boyouquan.com/planet-shuttle)·[Not By AI](https://notbyai.fyi)<br/><img style="width:20px;height:20px;margin-bottom:-4px" src="https://c.mknb.cc/i.png"><a href="https://nyaicp.us.kg/?id=20240088" target="_blank">喵呜 20240088 号</a>|<img style="width:20px;height:20px;margin-bottom:-4px" src="https://icp.gov.moe/images/ico64.png"><a href="https://icp.gov.moe/?keyword=20248884" target="_blank">萌ICP备20248884号</a><br/><img  style="width:20px;height:20px;margin-bottom:-4px" src="https://icp.gs/assets/images/icp.png"><a href="https://icp.gs/?id=20245385" title="岸号:20245385号">岸号 20245385号</a>|<img style="width:20px;height:20px;margin-bottom:-4px" src="https://style.wmou.com/images/guanma.png"><a href="https://guan.ma/hao/2024000101/" title="官码2024000101号">官码 2024000101号</a><script defer src="https://umami.awaae001.top/random-string.js" data-website-id="d334eb3e-61d8-424a-b416-2e7f9f3350bd"></script>
   # 主题用户越多，开发者维护和更新的积极性就越高，如果您喜欢本主题，请在适当的位置显示主题信息和仓库链接以表支持。
 
@@ -537,7 +583,7 @@ plugins:
     enable: #true # hexo-renderer-markdown-it-plus 默认开启 katex，此选项仅用于引入样式
     inject: |
       <link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://static.zeoseven.com/cn/2/main/result.css" media="all" onload="this.media='all'" />
+      - <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/lxgwwenkaiscreen.css">
   
   # MathJax
   # 需在Markdown文件开头加入mathjax: true
@@ -588,8 +634,8 @@ style:
     code: 85% # 相较于其所在行的文本大小，建议用百分比
     codeblock: 0.8125rem # 13px
   font-family:
-    logo: 'LXGW ZhenKai'
-    body: 'LXGW ZhenKai'
+    logo: '"LXGW WenKai Screen", system-ui, ...'
+    body: '"LXGW WenKai Screen", system-ui, ...'
     code: 'Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif'
     codeblock: 'Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif'
   text-align: left
