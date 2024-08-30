@@ -263,17 +263,21 @@ comments:
     serverURL: https://waline.mengze2.cn/
     # If false, comment count will only be displayed in post page, not in home page
     commentCount: true
+    locale:
+      placeholder:
+        😎嗨，朋友，留下脚印再走呗。
+    reaction: true
     # Pageviews count, Note: You should not enable both `waline.pageview` and `leancloud_visitors`.
     pageview: false
     # Custom emoji
      # emoji:
-       - # https://unpkg.com/@waline/emojis@1.1.0/weibo
-       - # https://unpkg.com/@waline/emojis@1.1.0/alus
-       - # https://unpkg.com/@waline/emojis@1.1.0/bilibili
-       - # https://unpkg.com/@waline/emojis@1.1.0/qq
-       - # https://unpkg.com/@waline/emojis@1.1.0/tieba
-       - # https://unpkg.com/@waline/emojis@1.1.0/tw-emoji
-       - # https://unpkg.com/@waline/emojis@1.1.0/bmoji
+      # - # https://unpkg.com/@waline/emojis@1.1.0/weibo
+      # - # https://unpkg.com/@waline/emojis@1.1.0/alus
+      # - # https://unpkg.com/@waline/emojis@1.1.0/bilibili
+      # - # https://unpkg.com/@waline/emojis@1.1.0/qq
+      # - # https://unpkg.com/@waline/emojis@1.1.0/tieba
+      # - # https://unpkg.com/@waline/emojis@1.1.0/tw-emoji
+      # - # https://unpkg.com/@waline/emojis@1.1.0/bmoji
     # 设置自己的图床服务，替换默认的 Base 64 编码嵌入（有体积大小限制），在评论中上传图片更加方便
     # imageUploader:
       # 适配了兰空图床V1、V2版本
