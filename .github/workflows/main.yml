@@ -39,6 +39,7 @@ jobs:
       if: steps.cache.outputs.cache-hit != 'true'
       run: |
         npm install --save
+        npm i hexo-related-popular-posts
 
     - name: 正在生成静态文件
       run: |
