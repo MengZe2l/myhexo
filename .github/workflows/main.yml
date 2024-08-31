@@ -13,40 +13,45 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: 正在检查分支
+    - name: 检查仓库分支
       uses: actions/checkout@v2
       with:
         ref: main
 
-    - name: 正在安装Node.js
+    - name: 安装Node.js环境
       uses: actions/setup-node@v1
       with:
         node-version: "16.x"
 
-    - name: 正在安装Hexo
+    - name: 安装Hexo框架
       run: |
         export TZ='Asia/Shanghai'
         npm install hexo-cli -g
 
-    - name: 正在缓存Hexo
+    - name: 缓存Hexo框架
       uses: actions/cache@v1
       id: cache
       with:
         path: node_modules
         key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
 
-    - name: 正在安装依赖
+    - name: 安装各种依赖
       if: steps.cache.outputs.cache-hit != 'true'
       run: |
         npm install --save
         npm i hexo-related-popular-posts
 
-    - name: 正在生成静态文件
+    - name: 安装Hexo插件
+      if: steps.cache.outputs.cache-hit != 'true'
+      run: |
+        npm i hexo-related-popular-posts
+
+    - name: 生成静态文件
       run: |
         hexo clean
         hexo generate
 
-    - name: 开始部署静态文件到远端
+    - name: 部署静态文件到远端
       run: |
         cd ./public
         git init
