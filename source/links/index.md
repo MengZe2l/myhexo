@@ -40,6 +40,12 @@ date: 2024-08-11 14:39:33
 
 > 有些删除小站友链的站点小站也会在发现之后删除贵站，这点还望理解
 
+## 置顶友链
+
+{% link https://qq.mba desc:true %}
+
+##普通友链
+
 {% link https://github.com/ desc:true %}
 
 {% link https://linexic.top desc:true %}
