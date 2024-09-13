@@ -1,0 +1,17 @@
+# 这是一个自动生成的 robots.txt 文件
+# 请根据您的需求进行修改
+Sitemap: https://www.mengze2.cn/sitemap.xml
+User-agent: *
+Allow: links
+Allow: about
+Allow: post
+Allow: links/rss
+Allow: tag
+Allow: privacy-policy
+Allow: newspaper
+Allow: archives
+Allow: categories
+Disallow: css
+Disallow: js
+Disallow: usr
+# 由梦泽Robot.txt生成器生成
