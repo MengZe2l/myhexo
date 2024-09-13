@@ -32,7 +32,6 @@ jobs:
       if: steps.cache.outputs.cache-hit != 'true'
       run: |
         npm install --save
-        npm i hexo-related-popular-posts
 
     - name: 缓存Hexo框架
       uses: actions/cache@v1
