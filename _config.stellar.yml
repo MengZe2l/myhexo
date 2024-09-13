@@ -177,12 +177,12 @@ article:
   # 如果没有指定横幅，是否根据 tags 作为关键词搜索横幅图片？
   auto_banner: true # search from https://source.unsplash.com/
   # 如果没有指定 excerpt 和 description，将自动取多长的内容作为文章摘要？
-  auto_excerpt: 90
+  auto_excerpt: 40
   # 分类颜色
   category_color:
     '探索号': '#f44336'
   # 文章许可协议
-  license: '本文采用 [署名-非商业性使用-相同方式共享 4.0 国际](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。'
+  license: '本文采用 [署名-非商业性使用-相同方式共享 4.0 国际](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。<br/>万万物皆有裂痕，那是光进来的地方<br/>本文仅代表个人主观观点，并不一定是客观事实。不喜欢可以不看，不要恶语相向。'
   # 分享
   # share: [wechat, weibo, email, link]
   # 相关文章，需要安装插件 (for layout: post)
@@ -207,7 +207,7 @@ search:
 comments:
   service: waline
   comment_title: 请合理发言，网络不是法外之地，快来讨论吧~
-  lazyload: false # true / false
+  lazyload: true # true / false
   # beaudar
   # https://beaudar.lipk.org/
   beaudar:
@@ -265,10 +265,10 @@ comments:
     commentCount: true
     locale:
       placeholder:
-        😎嗨，朋友，留下脚印再走呗。
+        你好好姐姐，留个评论呗~
     reaction: true
     # Pageviews count, Note: You should not enable both `waline.pageview` and `leancloud_visitors`.
-    pageview: false
+    pageview: true
     # Custom emoji
      # emoji:
       # - # https://unpkg.com/@waline/emojis@1.1.0/weibo
