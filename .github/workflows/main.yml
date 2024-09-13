@@ -28,13 +28,6 @@ jobs:
         export TZ='Asia/Shanghai'
         npm install hexo-cli -g
 
-    - name: 缓存Hexo框架
-      uses: actions/cache@v1
-      id: cache
-      with:
-        path: node_modules
-        key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
-
     - name: 安装各种依赖
       if: steps.cache.outputs.cache-hit != 'true'
       run: |
@@ -45,6 +38,13 @@ jobs:
       if: steps.cache.outputs.cache-hit != 'true'
       run: |
         npm i hexo-related-popular-posts
+
+    - name: 缓存Hexo框架
+      uses: actions/cache@v1
+      id: cache
+      with:
+        path: node_modules
+        key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
 
     - name: 生成静态文件
       run: |
